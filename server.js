@@ -12,9 +12,10 @@ const port = process.env.PORT;
 
 //connecting database
 db();
-// app.get("/", (req, res) => {
-//     res.send("helo");
-// })
+
+app.get("/", (req, res) => {
+    res.send("helo");
+})
 
 app.use('/api/user', userRouter)
 
